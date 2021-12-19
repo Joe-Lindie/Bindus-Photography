@@ -1,0 +1,366 @@
+/* Basic Styling */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Dark-blue: #00154f;
+  --White: hsl(0, 0%, 100%);
+  --hover-color: #f4af1b;
+  --spare-color: #f2bc94;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  background-size: 100%;
+}
+
+.Titles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--Dark-blue);
+}
+.Titles-container h1 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.Titles-container h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Start of Homepage CSS Styling */
+
+/* Nav Bar Mobile*/
+.hamburger {
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+#nav-item li {
+  display: none;
+}
+
+#nav-item.show li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  background-color: var(--Dark-blue);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/*Nav Items Hover State*/
+a {
+  text-decoration: none;
+  color: var(--spare-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.nav-list a:hover {
+  color: var(--hover-color);
+  font-weight: 500;
+}
+
+/* Background Image Homepage*/
+.bg-img {
+  background-image: url("Images/Homepage/mountain.JPG");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Homepage button, socials*/
+.button,
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  color: var(--spare-color);
+  background-color: var(--Dark-blue);
+  padding: 0.62rem 1rem 0.62rem 1rem;
+}
+
+.socials a:hover,
+button:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+  font-weight: 600;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--Dark-blue);
+  padding: 1rem 1rem 2.5rem 1rem;
+}
+
+/*Footer*/
+footer {
+  color: var(--spare-color);
+  background-color: var(--Dark-blue);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-size: 10px;
+  padding: 0.2rem;
+}
+
+/*Nav Bar Desktop*/
+@media (min-width: 750px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 1rem;
+  }
+
+  #nav-item li {
+    display: block;
+  }
+}
+
+/* End of Homepage CSS Styling */
+
+/* Start of Hightlights Page CSS Styling  */
+/* Mobile 375px */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Img-container {
+  padding: 1rem;
+  position: relative;
+}
+
+.Img-container .image {
+  width: 21rem;
+  height: 13.5rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.Img-container:hover .middle {
+  opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.Img-container:hover .image {
+  opacity: 0.4;
+}
+
+.text {
+  color: var(--Dark-blue);
+  font-weight: 500;
+}
+/* End of Hightlights Page CSS Styling  */
+
+/* Start of Gallery Page CSS Styling  */
+/* Mobile 375px */
+
+.gallery {
+  border: 1px solid var(--Dark-blue);
+  width: 21rem;
+  margin: 5px;
+}
+.last-img {
+  margin-bottom: 2rem;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 14rem;
+}
+
+div.gallery:hover {
+  border: 1px solid var(--hover-color);
+  cursor: pointer;
+}
+
+div.des {
+  text-align: center;
+  color: var(--Dark-blue);
+  padding: 1rem;
+}
+
+div.des:hover {
+  font-weight: 600;
+}
+
+/* End of Gallery Page CSS Styling  */
+
+/* Start of Bio Page CSS Styling  */
+
+.bio-bg-img {
+  background-image: url(Images/Homepage/Jeju.JPG);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--Dark-blue);
+  margin: 1rem;
+}
+
+.info-card h2 {
+  padding-bottom: 1rem;
+}
+
+.info-card h2,
+.info-card p {
+  line-height: 1.7rem;
+}
+/* Ends of Bio Page CSS Styling  */
+
+/* Start of Blog Page CSS Styling  */
+/* Blog (Same CSS styling from Gallery page)  */
+
+.des h2 {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.des p {
+  font-size: 0.8rem;
+}
+/* Ends of Blog Page CSS Styling  */
+
+/* Start of Contact Page CSS Styling  */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--Dark-blue);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.contact input,
+.contact textarea {
+  width: 20rem;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  border: 1.5px solid var(--spare-color);
+}
+
+.contact input:hover,
+.contact textarea:hover {
+  cursor: pointer;
+  border: 2px solid var(--hover-color);
+}
+
+textarea:focus::placeholder,
+input:focus::placeholder {
+  color: transparent;
+  /*Removes text on focus*/
+}
+
+/*Contact form Desktop*/
+@media (min-width: 750px) {
+  .contact input,
+  .contact textarea {
+    width: 25rem;
+    margin: 0.6rem;
+  }
+
+  .contact form {
+    margin-top: 2.5rem;
+  }
+}
+
+/*Start of Blogs Styling*/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 2rem 1rem;
+  border: 1px solid var(--Dark-blue);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.blog-img {
+  width: 12.5rem;
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+.blog h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.blog h3,
+.blog p {
+  color: var(--Dark-blue);
+  padding: 0.5rem;
+  line-height: 2rem;
+}
+.blog h3:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+/*Blog Desktop*/
+@media (min-width: 750px) {
+  .blog {
+    margin: 2rem 20rem 5rem 20rem;
+  }
+}
