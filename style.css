@@ -270,6 +270,17 @@ div.des:hover {
 /* Start of Blog Page CSS Styling  */
 /* Blog (Same CSS styling from Gallery page)  */
 
+.blog-gallery {
+  border: 1px solid var(--Dark-blue);
+  width: 21rem;
+  margin: 5px 5px 2rem 5px;
+}
+
+.blog-gallery img {
+  width: 100%;
+  height: 14rem;
+}
+
 .des h2 {
   padding-bottom: 1rem;
   font-size: 1rem;
