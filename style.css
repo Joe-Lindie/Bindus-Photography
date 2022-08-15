@@ -1,7 +1,12 @@
+/* ------------------ */
+
 /* Basic Styling */
+
+/* ------------------ */
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -12,20 +17,24 @@ html {
 
 :root {
   --Dark-blue: #00154f;
-  --White: hsl(0, 0%, 100%);
+  --White: #FFFFFF; 
   --hover-color: #f4af1b;
   --spare-color: #f2bc94;
 }
 
+/* ------------------ */
+
+/* Generic Styling */
+
+/* ------------------ */
 body {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
-  background-size: 100%;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--White);
 }
 
 .Titles-container {
@@ -34,6 +43,8 @@ a {
   align-items: center;
   color: var(--Dark-blue);
 }
+
+
 .Titles-container h1 {
   padding-top: 1rem;
   font-size: 1.5rem;
@@ -46,9 +57,12 @@ a {
   padding: 0.5rem;
 }
 
-/* Start of Homepage CSS Styling */
+/* ------------------ */
 
+/* Navigation Bar */
 /* Nav Bar Mobile First*/
+
+/* ------------------ */
 
 nav {
   background-color: var(--Dark-blue);
@@ -129,6 +143,12 @@ nav {
     height: 0%;
    }
 }
+
+/* ------------------ */
+
+/* Background Image */
+
+/* ------------------ */
 
 
 /* Background Image Homepage*/
