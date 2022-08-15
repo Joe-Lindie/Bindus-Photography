@@ -1,18 +1,16 @@
-// const hamburger =  document.getElementById('hamburger');
-// const navItem =  document.getElementById('nav-item');
+////////////////////////
 
-// hamburger.addEventListener('click', () => {
-//   navItem.classList.toggle('show');
-// });
+// Navigation Bar
 
-const openNavBar = document.getElementById("myNav")
-const closeNavBar = document.getElementById("myNav")
-const hamburger = document.getElementById("openBtn")
+////////////////////////
+const openMenu = document.getElementById("open_menu")
+const closeMenu = document.getElementById("close_menu")
+const navItems = document.getElementById("nav_items")
 
-closeNavBar.addEventListener("click", function closeNav() {
-  closeNavBar.style.width = "0%"
+openMenu.addEventListener("click", function openNav() {
+  navItems.style.width = "100%"
 })
 
-openBtn.addEventListener("click", function openNav() {
-  openNavBar.style.width = "100%"
+closeMenu.addEventListener("click", function closeNav() {
+  navItems.style.width = "0%"
 })
