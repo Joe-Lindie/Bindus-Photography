@@ -9,6 +9,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 :root {
   --Dark-blue: #00154f;
   --White: hsl(0, 0%, 100%);
@@ -20,6 +21,11 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .Titles-container {
@@ -42,41 +48,88 @@ body {
 
 /* Start of Homepage CSS Styling */
 
-/* Nav Bar Mobile*/
+/* Nav Bar Mobile First*/
+
+nav {
+  background-color: var(--Dark-blue);
+}
+
 .hamburger {
   cursor: pointer;
-  padding-left: 1rem;
+  padding: 0.5rem;
+  color: wheat;
 }
 
-#nav-item li {
-  display: none;
-}
-
-#nav-item.show li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-ul {
+.overlay {
   background-color: var(--Dark-blue);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-/*Nav Items Hover State*/
-a {
-  text-decoration: none;
-  color: var(--spare-color);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.nav-list a:hover {
+.overlay a {
+  padding: 8px;
+  font-size: 1.5rem;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
   color: var(--hover-color);
-  font-weight: 500;
 }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 20px;
+}
+
+/*NavBar for Desktop View*/
+@media (min-width: 750px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .overlay ul {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background-color: var(--Dark-blue);
+    z-index: 2;  /* sets navbar to top*/
+    list-style: none;
+  }
+
+  .overlay ul a {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  h1 {
+    margin-top: 3rem;
+   }
+
+   .overlay {
+    height: 0%;
+   }
+}
+
 
 /* Background Image Homepage*/
 .bg-img {
@@ -129,7 +182,7 @@ footer {
 }
 
 /*Nav Bar Desktop*/
-@media (min-width: 750px) {
+/* @media (min-width: 750px) {
   .hamburger {
     display: none;
   }
@@ -144,7 +197,7 @@ footer {
   #nav-item li {
     display: block;
   }
-}
+} */
 
 /* End of Homepage CSS Styling */
 
