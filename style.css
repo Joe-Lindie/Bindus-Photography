@@ -1,6 +1,6 @@
 /* ------------------ */
 
-/* Basic Styling */
+/* BASIC STYLING */
 
 /* ------------------ */
 html {
@@ -24,43 +24,46 @@ html {
 
 /* ------------------ */
 
-/* Generic Styling */
+/* GENERIC STYLING */
 
 /* ------------------ */
+
 body {
-  font-family: "Outfit", sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: var(--Dark-blue);
 }
 
 a {
   text-decoration: none;
   color: var(--White);
+  cursor: pointer;
 }
 
-.Titles-container {
+.center {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  color: var(--Dark-blue);
+  flex-direction: column;
 }
 
-
-.Titles-container h1 {
-  padding-top: 1rem;
-  font-size: 1.5rem;
+.margin_top {
+  margin-top: 1rem;
 }
 
-.Titles-container h2 {
-  font-size: 1rem;
-  font-weight: 300;
-  text-align: center;
+.all_buttons {
+  background-color: var(--Dark-blue);
+  color: var(--White);
   padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.all_buttons:hover,
+.overlay-content a:hover{
+  color: var(--hover-color);
 }
 
 /* ------------------ */
 
 /* Navigation Bar */
-/* Nav Bar Mobile First*/
 
 /* ------------------ */
 
@@ -69,9 +72,7 @@ nav {
 }
 
 .hamburger {
-  cursor: pointer;
   padding: 0.5rem;
-  color: wheat;
 }
 
 .overlay {
@@ -101,10 +102,6 @@ nav {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: var(--hover-color);
-}
-
  .closebtn {
   position: absolute;
   top: 20px;
@@ -112,7 +109,11 @@ nav {
   font-size: 20px;
 }
 
-/*NavBar for Desktop View*/
+/* ------------------ */
+
+/*NAVBAR FOR DESKTOP VIEW*/
+
+/* ------------------ */
 @media (min-width: 750px) {
 
   .hamburger {
@@ -146,13 +147,13 @@ nav {
 
 /* ------------------ */
 
-/* Background Image */
+/* BACKGROUND IMAGE */
 
 /* ------------------ */
 
 
-/* Background Image Homepage*/
-.bg-img {
+/* BACKGROUND IMAGE HOMEPAGE*/
+.bg_img {
   background-image: url("Images/Homepage/mountain.JPG");
   height: 50vh;
   background-position: center;
@@ -160,37 +161,12 @@ nav {
   background-size: cover;
 }
 
-/* Homepage button, socials*/
-.button,
-.socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
-}
 
-button {
-  border: none;
-  border-radius: 20px;
-  color: var(--spare-color);
-  background-color: var(--Dark-blue);
-  padding: 0.62rem 1rem 0.62rem 1rem;
-}
+/* ------------------ */
 
-.socials a:hover,
-button:hover {
-  cursor: pointer;
-  color: var(--hover-color);
-  font-weight: 600;
-}
+/* FOOTER */
 
-.socials a {
-  text-decoration: none;
-  color: var(--Dark-blue);
-  padding: 1rem 1rem 2.5rem 1rem;
-}
-
-/*Footer*/
+/* ------------------ */
 footer {
   color: var(--spare-color);
   background-color: var(--Dark-blue);
@@ -201,256 +177,5 @@ footer {
   padding: 0.2rem;
 }
 
-/*Nav Bar Desktop*/
-/* @media (min-width: 750px) {
-  .hamburger {
-    display: none;
-  }
 
-  .nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    font-size: 1rem;
-  }
-
-  #nav-item li {
-    display: block;
-  }
-} */
-
-/* End of Homepage CSS Styling */
-
-/* Start of Hightlights Page CSS Styling  */
-/* Mobile 375px */
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.Img-container {
-  padding: 1rem;
-  position: relative;
-}
-
-.Img-container .image {
-  width: 21rem;
-  height: 13.5rem;
-  padding: 0.5rem;
-  border-radius: 0.7rem;
-  cursor: pointer;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-
-.Img-container:hover .middle {
-  opacity: 1;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  transition: 0.3s ease;
-}
-
-.Img-container:hover .image {
-  opacity: 0.4;
-}
-
-.text {
-  color: var(--Dark-blue);
-  font-weight: 500;
-}
-/* End of Hightlights Page CSS Styling  */
-
-/* Start of Gallery Page CSS Styling  */
-/* Mobile 375px */
-
-.gallery {
-  border: 1px solid var(--Dark-blue);
-  width: 21rem;
-  margin: 5px;
-  overflow: hidden;
-}
-.last-img {
-  margin-bottom: 2rem;
-}
-
-.gallery img {
-  width: 100%;
-  height: 14rem;
-  transition: transform 0.5s ease;
-}
-
-.gallery:hover img {
-  transform: scale(1.5);
-}
-
-div.gallery:hover {
-  border: 1px solid var(--hover-color);
-  cursor: pointer;
-}
-
-div.des {
-  text-align: center;
-  color: var(--Dark-blue);
-  padding: 1rem;
-}
-
-div.des:hover {
-  font-weight: 600;
-}
-
-/* End of Gallery Page CSS Styling  */
-
-/* Start of Bio Page CSS Styling  */
-
-.bio-bg-img {
-  background-image: url(Images/Homepage/Jeju.JPG);
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.info-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--Dark-blue);
-  margin: 1rem;
-}
-
-.info-card h2 {
-  padding-bottom: 1rem;
-}
-
-.info-card h2,
-.info-card p {
-  line-height: 1.7rem;
-}
-/* Ends of Bio Page CSS Styling  */
-
-/* Start of Blog Page CSS Styling  */
-/* Blog (Same CSS styling from Gallery page)  */
-
-.blog-gallery {
-  border: 1px solid var(--Dark-blue);
-  width: 21rem;
-  margin: 5px 5px 2rem 5px;
-}
-
-.blog-gallery img {
-  width: 100%;
-  height: 14rem;
-}
-
-.des h2 {
-  padding-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.des p {
-  font-size: 0.8rem;
-}
-/* Ends of Blog Page CSS Styling  */
-
-/* Start of Contact Page CSS Styling  */
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid var(--Dark-blue);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.contact input,
-.contact textarea {
-  width: 20rem;
-  margin: 5px;
-  border-radius: 5px;
-  text-align: center;
-  border: none;
-  border: 1.5px solid var(--spare-color);
-}
-
-.contact input:hover,
-.contact textarea:hover {
-  cursor: pointer;
-  border: 2px solid var(--hover-color);
-}
-
-textarea:focus::placeholder,
-input:focus::placeholder {
-  color: transparent;
-  /*Removes text on focus*/
-}
-
-/*Contact form Desktop*/
-@media (min-width: 750px) {
-  .contact input,
-  .contact textarea {
-    width: 25rem;
-    margin: 0.6rem;
-  }
-
-  .contact form {
-    margin-top: 2.5rem;
-  }
-}
-
-/*Start of Blogs Styling*/
-
-.blog {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 1rem 2rem 1rem;
-  border: 1px solid var(--Dark-blue);
-  padding: 1rem;
-  border-radius: 5px;
-}
-.blog-img {
-  width: 12.5rem;
-  height: auto;
-  margin: 0.5rem;
-  border-radius: 5px;
-}
-.blog h3 {
-  text-align: center;
-  font-weight: 300;
-}
-.blog h3,
-.blog p {
-  color: var(--Dark-blue);
-  padding: 0.5rem;
-  line-height: 2rem;
-}
-.blog h3:hover {
-  color: var(--hover-color);
-  cursor: pointer;
-}
-
-/*Blog Desktop*/
-@media (min-width: 750px) {
-  .blog {
-    margin: 2rem 20rem 5rem 20rem;
-  }
-}
+ 
