@@ -1,3 +1,7 @@
+# Under Construction
+# See you soon!
+
+
 # Bindus Photography
 
 Bindus Photography is a collection of photographs from around the world.  
