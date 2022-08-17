@@ -31,6 +31,8 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--Dark-blue);
+  position: relative;
+  min-height: 100vh;
 }
 
 a {
@@ -47,6 +49,10 @@ a {
 
 .margin_top {
   margin-top: 1rem;
+}
+
+.margin {
+  margin: 1rem;
 }
 
 .all_buttons {
@@ -66,13 +72,14 @@ a {
 /* Navigation Bar */
 
 /* ------------------ */
-
 nav {
   background-color: var(--Dark-blue);
+
 }
 
 .hamburger {
   padding: 0.5rem;
+
 }
 
 .overlay {
@@ -97,7 +104,6 @@ nav {
 
 .overlay a {
   padding: 8px;
-  font-size: 1.5rem;
   display: block;
   transition: 0.3s;
 }
@@ -136,7 +142,7 @@ nav {
     padding: 8px;
   }
 
-  h1 {
+  .bg_img h1 {
     margin-top: 3rem;
    }
 
@@ -155,10 +161,18 @@ nav {
 /* BACKGROUND IMAGE HOMEPAGE*/
 .bg_img {
   background-image: url("Images/Homepage/mountain.JPG");
-  height: 50vh;
+  height: 75vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bg_img h1 {
+  font-size: 1.5rem;
+}
+
+.bg_img h2 {
+  font-size: 1rem;
 }
 
 
@@ -170,10 +184,10 @@ nav {
 footer {
   color: var(--spare-color);
   background-color: var(--Dark-blue);
-  width: 100%;
-  position: fixed;
-  bottom: 0;
   font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 0.2rem;
 }
 
