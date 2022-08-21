@@ -30,6 +30,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   color: var(--Dark-blue);
   position: relative;
   min-height: 100vh;
@@ -47,13 +48,28 @@ a {
   flex-direction: column;
 }
 
+.horizontal {
+ display: flex;
+ align-items:center;
+ justify-content: center;
+}
+
 .margin_top {
   margin-top: 1rem;
+}
+
+.margin_bottom {
+  margin-bottom: 1.5rem;
+}
+
+.margin_right {
+  margin-right: 1rem;
 }
 
 .margin {
   margin: 1rem;
 }
+
 
 .all_buttons {
   background-color: var(--Dark-blue);
@@ -190,6 +206,3 @@ footer {
   width: 100%;
   padding: 0.2rem;
 }
-
-
- 
