@@ -41,6 +41,14 @@ a {
   color: var(--White);
   cursor: pointer;
 }
+  
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
 
 .center {
   display: flex;
@@ -52,6 +60,14 @@ a {
  display: flex;
  align-items:center;
  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 
 .margin_top {
@@ -183,16 +199,14 @@ nav {
   background-size: cover;
 }
 
-.bg_img h1 {
-  font-size: 1.5rem;
-}
-
-.bg_img h2 {
-  font-size: 1rem;
-}
-
 .social {
   height: 1rem;
+}
+
+.image {
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
 }
 
 /* ------------------ */
