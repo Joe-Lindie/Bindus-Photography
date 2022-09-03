@@ -189,23 +189,9 @@ nav {
 
 /* ------------------ */
 
-
-/* BACKGROUND IMAGE HOMEPAGE*/
-.bg_img {
-  background-image: url("Images/Homepage/mountain.JPG");
+.background_image {
+  width: 100vw;
   height: 75vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.social {
-  height: 1rem;
-}
-
-.image {
-  width: 15rem;
-  height: 10rem;
   object-fit: cover;
 }
 
