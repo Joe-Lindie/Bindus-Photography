@@ -40,7 +40,7 @@ function changeImg() {
     i = 0
   }
 
-  setTimeout("changeImg()", time)
+  setTimeout(changeImg, time)
 }
 
 window.onload = changeImg
