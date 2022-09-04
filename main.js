@@ -43,7 +43,7 @@ function changeImg() {
   setTimeout(changeImg, time)
 }
 
-window.onload = changeImg
+changeImg()
 
 ////////////////////////
 
