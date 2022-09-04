@@ -27,7 +27,7 @@ const time = 2000 // Time Between Switch
 
 // Image List
 images[0] = "Images/Homepage/Jeju.JPG"
-images[1] = "Images/Homepage/mountain.JPG"
+images[1] = "Images/Homepage/Cherry.jpg"
 images[2] = "Images/Homepage/Scotland_1.jpeg"
 images[3] = "Images/Homepage/Scotland_2.jpeg"
 
