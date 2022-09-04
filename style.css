@@ -204,7 +204,6 @@ nav {
   text-align: center;
   color: var(--White);
   padding: 1rem;
-  background-color: var(--Dark-blue);
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
 }
 
@@ -245,13 +244,28 @@ nav {
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
-
 }
 
 .gallery img {
-  width: 20rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 18rem;
   padding: 1px;
+  opacity: 0.6;
+}
 
+.gallery img:hover {
+  opacity: 1;
+}
+
+@media (min-width: 750px) { 
+  .gallery img {
+    width: 20rem;
+  }
+
+  .highlights_title {
+    margin-top: 2rem;
+  }
 }
 
 /* ------------------ */
