@@ -228,6 +228,15 @@ nav {
 
 .intro {
   line-height: 1.6;
+  font-weight: 300;
+}
+
+.intro a {
+  color: black;
+  font-weight: 100;
+}
+.intro a:hover {
+  color: var(--hover-color);
 }
 
 /* ------------------ */
