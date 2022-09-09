@@ -298,6 +298,21 @@ nav {
 
 /* ------------------ */
 
+/*  Highlights Page  */
+
+/* ------------------ */
+
+.myStyle {
+  display: none;
+}
+
+.gallery_img img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ------------------ */
+
 /* FOOTER */
 
 /* ------------------ */
@@ -309,8 +324,3 @@ footer {
   padding: 0.2rem; 
 }
 
-
-
-.myStyle {
-  display: none;
-}
