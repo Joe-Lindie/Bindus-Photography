@@ -263,7 +263,7 @@ nav {
 .gallery img {
   cursor: pointer;
   border-radius: 5px;
-  width: 7rem;
+  width: 9rem;
   padding: 1px;
   opacity: 0.6;
 }
@@ -291,7 +291,7 @@ nav {
 /* Desktop breakpoint  */
 @media (min-width: 1024px) { 
   .gallery img {
-    width: 20rem;
+    width: 21rem;
   }
 }
 
