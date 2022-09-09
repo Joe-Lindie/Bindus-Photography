@@ -45,6 +45,17 @@ a {
   color: var(--White);
   cursor: pointer;
 }
+
+button {
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 5px;
+  background: transparent;
+}
+
+button:hover {
+  color: var(--hover-color);
+}
   
 .center {
   display: flex;
@@ -68,6 +79,10 @@ a {
   align-items:center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.page_sub_title {
+  font-weight: 300;
 }
 
 .margin_top {
@@ -100,14 +115,6 @@ h2 {
  }
 
 
-.all_buttons {
-  background-color: var(--Dark-blue);
-  color: var(--White);
-  padding: 0.5rem;
-  border-radius: 10px;
-}
-
-.all_buttons:hover,
 .overlay-content a:hover{
   color: var(--hover-color);
 }
@@ -261,7 +268,6 @@ nav {
 }
 
 .gallery img {
-  cursor: pointer;
   border-radius: 5px;
   width: 9rem;
   padding: 1px;
@@ -272,18 +278,13 @@ nav {
   opacity: 1;
 }
 
-.highlights_sub_title {
-  font-weight: 300;
-}
-
-
 /* tablet breakpoint  */
 @media (min-width: 768px) { 
   .gallery img {
     width: 14rem;
   }
 
-  .highlights_title {
+  .page_title {
     margin-top: 2.5rem;
   }
 }
