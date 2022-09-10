@@ -51,10 +51,13 @@ button {
   padding: 0.2rem;
   border-radius: 5px;
   background: transparent;
+  border: none;
+  border: 0.5px solid black;
 }
 
 button:hover {
   color: var(--hover-color);
+  background-color: var(--Dark-blue);
 }
   
 .center {
@@ -81,10 +84,6 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.page_sub_title {
-  font-weight: 300;
-}
-
 .margin_top {
   margin-top: 1rem;
 }
@@ -107,6 +106,7 @@ h1 {
 
 h2 {
   font-size: 1rem;
+  font-weight: 300;
  }
  
  h1, 
