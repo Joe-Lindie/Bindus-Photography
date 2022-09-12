@@ -30,13 +30,13 @@ const japImagesArray = Array.from(japImages)
 
 function showAllImages() {
   allImgs.forEach((images) => {
-    images.classList.remove("myStyle")
+    images.classList.remove("displayNone")
   })
 }
 
 function removeAllImage() {
   allImgs.forEach((images) => {
-    images.classList.add("myStyle")
+    images.classList.add("displayNone")
   })
 }
 
@@ -44,7 +44,7 @@ function ShowSingImages() {
   removeAllImage()
 
   singImagesArray.forEach((images) => {
-    images.classList.remove("myStyle")
+    images.classList.remove("displayNone")
   })
 }
 
@@ -52,7 +52,7 @@ function ShowScotImages() {
   removeAllImage()
 
   scotImagesArray.forEach((images) => {
-    images.classList.remove("myStyle")
+    images.classList.remove("displayNone")
   })
 }
 
@@ -60,7 +60,7 @@ function ShowKorImages() {
   removeAllImage()
 
   korImagesArray.forEach((images) => {
-    images.classList.remove("myStyle")
+    images.classList.remove("displayNone")
   })
 }
 
@@ -68,6 +68,6 @@ function ShowJapImages() {
   removeAllImage()
 
   japImagesArray.forEach((images) => {
-    images.classList.remove("myStyle")
+    images.classList.remove("displayNone")
   })
 }

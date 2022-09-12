@@ -298,17 +298,29 @@ nav {
 
 /* ------------------ */
 
-/*  Highlights Page  */
+/*  Gallery Page  */
 
 /* ------------------ */
 
-.myStyle {
+.displayNone {
   display: none;
 }
 
 .gallery_img img {
   opacity: 1;
   cursor: pointer;
+}
+
+.button_container {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.button_container button {
+  margin: 0.2rem;
 }
 
 /* ------------------ */
